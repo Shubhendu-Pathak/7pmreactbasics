@@ -23,7 +23,7 @@ class Cart extends React.Component {
         {
           id:3,
           price: 890,
-          title: "Blanket",
+          title: "Fluffy Blanket",
           qty: 7,
           img: "https://images.unsplash.com/photo-1433162653888-a571db5ccccf?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YmxhY25rZXR8ZW58MHx8MHx8fDA%3D",
         },

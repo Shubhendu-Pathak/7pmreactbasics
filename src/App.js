@@ -2,6 +2,8 @@ import React, { useState } from 'react'
 import './App.css'
 import Cart from './components/Cart'
 import Navbar from './components/Navbar'
+import Us from './Hooks/Us'
+import QuizApp from './Hooks/QuizApp'
 
 class App extends React.Component {
 
@@ -99,15 +101,19 @@ getCartTotal(){
     let {products} = this.state
   return (
     <div>
-      <Navbar getCartCount={this.getCartCount()}/>
-   <Cart
+      {/* <Navbar getCartCount={this.getCartCount()}/> */}
+   {/* <Cart
    products={products}
    handleIncQty={this.handleIncQty}
    handleDecQty={this.handleDecQty}
    handleDelItem={this.handleDelItem}
-   /> 
-   <hr/>
-   <h1>Total Count = {this.getCartTotal()} </h1>
+   />  */}
+   {/* <hr/> */}
+   {/* <h1>Total Count = {this.getCartTotal()} </h1> */}
+
+{/* hooks 👇👇 */}
+{/* <Us/> */}
+<QuizApp/>
     </div>
   )
 }

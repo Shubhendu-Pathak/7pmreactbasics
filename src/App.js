@@ -4,6 +4,7 @@ import Cart from './components/Cart'
 import Navbar from './components/Navbar'
 import Us from './Hooks/Us'
 import QuizApp from './Hooks/QuizApp'
+import Ue from './Hooks/Ue'
 
 class App extends React.Component {
 
@@ -113,7 +114,8 @@ getCartTotal(){
 
 {/* hooks 👇👇 */}
 {/* <Us/> */}
-<QuizApp/>
+{/* <QuizApp/> */}
+<Ue/>
     </div>
   )
 }

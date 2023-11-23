@@ -1,30 +1,34 @@
-import React, { useState } from 'react'
+import { useState } from "react"
 
-function Us() {
-    let [num,setNum] = useState(5)
-    console.log(num);
-    // console.log(setNum);
-    const incNum = () =>{
-        setNum( num+1 )
+
+function Us(){
+    let [data,setData] = useState(3)
+// console.log(data);
+// console.log(setData);
+
+    // data = state
+    // setData = func to update the state
+
+    function handleInc(){
+        // alert(678)
+        setData( data+1 )
     }
-
-    const decNum = () =>{
-        // if(num==0){
-            // return null;
-        // }else{
-            // setNum( num-1 )
-        // }
-        let result = (num===0) ? null : setNum( num-1)
-        return result
+    function handleDec(){
+        // alert(678)
+     if(  data == 0 ){
+        return null
+     }else{
+        setData( data-1 )
+     }
     }
-
-  return (
-    <div>UsState
-<h1>State says {num}</h1>
-<button onClick={incNum}>+</button>
-<button onClick={decNum}>-</button>
-    </div>
-  )
+    return(
+        <>
+        <h1>USESTATE</h1>
+        <h2>State says {data}</h2>
+        <button onClick={handleInc}>+</button>
+        <button onClick={handleDec}>-</button>
+        </>
+    )
 }
 
 export default Us

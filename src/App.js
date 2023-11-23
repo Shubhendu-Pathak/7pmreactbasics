@@ -5,6 +5,10 @@ import Navbar from './components/Navbar'
 import Us from './Hooks/Us'
 import QuizApp from './Hooks/QuizApp'
 import Ue from './Hooks/Ue'
+import Axget from './axios crud/Axget'
+import Axpost from './axios crud/Axpost'
+import Axput from './axios crud/Axput'
+import Axdel from './axios crud/Axdel'
 
 class App extends React.Component {
 
@@ -101,7 +105,7 @@ getCartTotal(){
   render(){
     let {products} = this.state
   return (
-    <div>
+    <>
       {/* <Navbar getCartCount={this.getCartCount()}/> */}
    {/* <Cart
    products={products}
@@ -115,8 +119,12 @@ getCartTotal(){
 {/* hooks 👇👇 */}
 {/* <Us/> */}
 {/* <QuizApp/> */}
-<Ue/>
-    </div>
+{/* <Ue/> */}
+{/* <Axget/> */}
+{/* <Axpost/> */}
+{/* <Axput/> */}
+<Axdel/>
+    </>
   )
 }
 }

@@ -1,44 +1,43 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
+import { useState } from "react";
 
 function Ue() {
-  let [a, b] = useState(108);
-  let [c, d] = useState(10);
+  let [a, b] = useState(4);
+  // console.log(b)
+  let [c, d] = useState(12);
 
   let add = () => {
     b(a + 1);
   };
-
-  let dec = () => {
-    d(c + 1);
+  let sub = () => {
+    d(c - 1);
   };
 
-  console.log("Outside");
+  console.log('Outside');
 
-//   // renders outside and inside initially and on every state change
-//   useEffect(() => {
-//     console.log("Inside UseEFFECT");
-//   });
+  // // type 1 = useeffect will run on initial render and on ever re-render
+  // useEffect(()=>{
+  //   console.log('Inside Useffect');
+  // })
 
-//   // renders  outside and inside initially and only once inside is rendered
-//   useEffect(() => {
-//     console.log("Inside UseEFFECT");
-//   },[]);
+    // // type 2 = useeffect will run on initial render and just once
+    // useEffect(()=>{
+    //   console.log('Inside Useffect');
+    // },[])
 
-  // renders  outside and inside initially and on every specific dependency change
-  useEffect(() => {
-    console.log("Inside UseEFFECT");
-  },[a]);
+   // type 3 = useeffect will run on initial render and just once
+  //  useEffect(()=>{
+  //   console.log('Inside Useffect');
+  // },[a])
 
   return (
     <>
-      <h1>Useeffect</h1>
-
-      <h2>
-        Add says {a} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Dec says{" "}
-        {c}
-      </h2>
+      <h1>
+        {" "}
+        A says {a} and C says {c}
+      </h1>
       <button onClick={add}>+</button>
-      <button onClick={dec}>-</button>
+      <button onClick={sub}>-</button>
     </>
   );
 }

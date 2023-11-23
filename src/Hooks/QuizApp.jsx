@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState } from 'react'
 
 function QuizApp() {
   let data = [
@@ -39,56 +39,63 @@ function QuizApp() {
       ],
     },
   ];
-  console.log(data);
+  // console.log(data);
 
-  let [ques, setQues] = useState(0);
-  let [showScore, setShowScore] = useState(false)
+let [q,setQ] = useState(0)
+let [showscore,setShowScore] = useState(false)
 let [score,setScore] = useState(0)
 
-  let handleQues = (para) => {
-    console.log(para);
+function handleClick(para){
 
-    if(para===true) setScore(score+1)
+console.log(para);
 
-let nxtq = ques + 1;
-if(nxtq < data.length){
-    setQues(nxtq)
-}else{
-    alert('Quiz Over')
-    setShowScore(!showScore)
+if(para==true){
+setScore(score+1)
 }
-  };
+
+let nextq = q +1
+if(nextq < data.length){
+  setQ(nextq)
+}else{
+  alert('Quiz Over')
+  setShowScore(!showscore)
+}
+}
 
   return (
-    <>
-    
+   <>
   
- {
-showScore ? 
-  <div className="score-section">
-  <h1>You scored {score}</h1>
-</div>
-:
-<div className="ques-ans-section">
-  <div className="ques-section">
-    <h2>{data[ques].questionText}</h2>
-  </div>
-  <div className="ans-section">
-    {data[ques].answer.map((ele, index) => {
-      return (
-        <button 
-        // onClick={handleQues}
-        onClick={()=>handleQues(ele.isCorrect)}
-        key={index}>
-        {ele.answerText}
-        </button>
-      );
-    })}
-  </div>
-</div>
- }
-    </>
-  );
+   <div className="quizapp">
+    { 
+    showscore ? 
+    <div className="score-section">
+      <h1>You SCORED =  {score}</h1>
+    </div>
+    :
+    <div className="ques-ans-section">
+      <div className="ques">
+        <h2>Q.{q+1} ) {data[q].questionText} </h2>
+      </div>
+      <div className="answer">
+       
+          {
+            data[q].answer.map((ele,index)=>{
+              return <button 
+              key={index} 
+              // onClick={handleClick}
+              onClick={()=>handleClick(ele.isCorrect)}
+              >
+              {ele.answerText}
+              </button>
+            })
+          }
+       
+      </div>
+    </div>
+}
+   </div>
+   </>
+  )
 }
 
-export default QuizApp;
+export default QuizApp

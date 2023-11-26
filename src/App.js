@@ -9,6 +9,10 @@ import Axget from './axios crud/Axget'
 import Axpost from './axios crud/Axpost'
 import Axput from './axios crud/Axput'
 import Axdel from './axios crud/Axdel'
+import Controllable from './Hooks/ConUnconMulcon/Controllable'
+import Multicontrollable from './Hooks/ConUnconMulcon/Multicontrollable'
+import Uncontrollable from './Hooks/ConUnconMulcon/Uncontrollable'
+import Userefone from './Hooks/ConUnconMulcon/Userefone'
 
 class App extends React.Component {
 
@@ -123,7 +127,11 @@ getCartTotal(){
 {/* <Axget/> */}
 {/* <Axpost/> */}
 {/* <Axput/> */}
-<Axdel/>
+{/* <Axdel/> */}
+{/* <Controllable/> */}
+{/* <Multicontrollable/> */}
+{/* <Uncontrollable/> */}
+<Userefone/>
     </>
   )
 }

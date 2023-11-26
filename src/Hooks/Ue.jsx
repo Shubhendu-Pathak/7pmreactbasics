@@ -16,8 +16,9 @@ function Ue() {
   console.log('Outside');
 
   // // type 1 = useeffect will run on initial render and on ever re-render
+  
   // useEffect(()=>{
-  //   console.log('Inside Useffect');
+  //  console.log('Inside UseEffect'); 
   // })
 
     // // type 2 = useeffect will run on initial render and just once
@@ -28,7 +29,7 @@ function Ue() {
    // type 3 = useeffect will run on initial render and just once
   //  useEffect(()=>{
   //   console.log('Inside Useffect');
-  // },[a])
+  // },[c])
 
   return (
     <>

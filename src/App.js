@@ -13,6 +13,8 @@ import Controllable from './Hooks/ConUnconMulcon/Controllable'
 import Multicontrollable from './Hooks/ConUnconMulcon/Multicontrollable'
 import Uncontrollable from './Hooks/ConUnconMulcon/Uncontrollable'
 import Userefone from './Hooks/ConUnconMulcon/Userefone'
+import Main from './ImageSearch/Main'
+import Main2 from './ImageSearch/Main2'
 
 class App extends React.Component {
 
@@ -131,7 +133,9 @@ getCartTotal(){
 {/* <Controllable/> */}
 {/* <Multicontrollable/> */}
 {/* <Uncontrollable/> */}
-<Userefone/>
+{/* <Userefone/> */}
+{/* <Main/> */}
+<Main2/>
     </>
   )
 }

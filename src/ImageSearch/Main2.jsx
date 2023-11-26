@@ -7,7 +7,7 @@ function Main2() {
 //   for debouncing
   let [debounce,setdebounce] = useState(txt)
 
-  let client_id = "fJsVO5tkBEtwlwJ39bcqanGoL-ugJa3yMYuTQwn2Gi4";
+  let client_id
 
 //   setimeout function u.effect
 useEffect(()=>{

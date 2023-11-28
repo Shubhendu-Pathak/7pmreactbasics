@@ -7,34 +7,53 @@ function Main2() {
 //   for debouncing
   let [debounce,setdebounce] = useState(txt)
 
-  let client_id
+  let client_id 
 
-//   setimeout function u.effect
+  // setimeout function u.effect
+// useEffect(()=>{
+//     const timeid = setTimeout(()=>{
+// setdebounce(txt)
+//     },1000)
+
+//     return ()=>{
+//         clearTimeout(timeid)
+//     }
+// },[txt])
+
+// useEffect(()=>{
+//     let getdata = async()=>{
+//         axios
+//         .get(
+//           `https://api.unsplash.com/search/photos?client_id=${client_id}&query=${debounce}`
+//         )
+//         .then((response) => {
+//           setimgdata(response.data?.results)
+//           console.log(imgdata);
+//         });
+//     }
+// if(debounce){
+//     getdata()
+// }
+// },[debounce])
+
+// default scene
 useEffect(()=>{
-    const timeid = setTimeout(()=>{
-setdebounce(txt)
-    },1000)
-
-    return ()=>{
-        clearTimeout(timeid)
-    }
+  let getdata = async()=>{
+      axios
+      .get(
+        `https://api.unsplash.com/search/photos?client_id=${client_id}&query=${txt}`
+      )
+      .then((response) => {
+        setimgdata(response.data?.results)
+        console.log(imgdata);
+      });
+  }
+if(txt){
+  getdata()
+}
 },[txt])
 
-useEffect(()=>{
-    let getdata = async()=>{
-        axios
-        .get(
-          `https://api.unsplash.com/search/photos?client_id=${client_id}&query=${debounce}`
-        )
-        .then((response) => {
-          setimgdata(response.data?.results)
-          console.log(imgdata);
-        });
-    }
-if(debounce){
-    getdata()
-}
-},[debounce])
+
 
   return (
     <>
@@ -73,7 +92,7 @@ if(debounce){
 
 export default Main2;
 
-//!)send reqest for data
+//1)send reqeust for data
 //2)get hold of the data
 //3)render the data
 

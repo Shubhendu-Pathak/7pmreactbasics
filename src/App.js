@@ -15,6 +15,7 @@ import Uncontrollable from './Hooks/ConUnconMulcon/Uncontrollable'
 import Userefone from './Hooks/ConUnconMulcon/Userefone'
 import Main from './ImageSearch/Main'
 import Main2 from './ImageSearch/Main2'
+import Main3 from './VideoSearch/Main3'
 
 class App extends React.Component {
 
@@ -135,7 +136,8 @@ getCartTotal(){
 {/* <Uncontrollable/> */}
 {/* <Userefone/> */}
 {/* <Main/> */}
-<Main2/>
+{/* <Main2/> */}
+<Main3/>
     </>
   )
 }

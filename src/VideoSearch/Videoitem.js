@@ -1,10 +1,10 @@
 import React from 'react'
 
 function Videoitem(props) {
-    let {ele} = props
+    let {ele,setvideoID,videoId} = props
   return (
   <>
-  <li className="list-group-item">
+  <li className={`list-group-item ${videoId ? 'ms-3' : 'm-1'}`} onClick={()=>setvideoID(ele?.id?.videoId)}>
     <div className="card" style={{width:'18rem'}}>
         <img className='card-img-top' src={ele.snippet.thumbnails.default.url} alt="" />
         <div className="card-body">

@@ -1,0 +1,25 @@
+{
+  "users": [
+    {
+      "name": "SHUBHENDU PATHAK",
+      "username": "",
+      "email": "ankitpathak7@gmail.com",
+      "password": "",
+      "id": 1
+    },
+    {
+      "name": "Kaaliye",
+      "username": "",
+      "email": "kd@21gmail.com",
+      "password": "",
+      "id": 2
+    },
+    {
+      "name": "Deer",
+      "username": "Sp",
+      "email": "ankitpathak3@gmail.com",
+      "password": "undertaker",
+      "id": 3
+    }
+  ]
+}

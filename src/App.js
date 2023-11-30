@@ -16,6 +16,8 @@ import Userefone from './Hooks/ConUnconMulcon/Userefone'
 import Main from './ImageSearch/Main'
 import Main2 from './ImageSearch/Main2'
 import Main3 from './VideoSearch/Main3'
+import Main4 from './axios crud jsonServer/Main4'
+import Main5 from './fetchapis/Main5'
 
 class App extends React.Component {
 
@@ -137,7 +139,9 @@ getCartTotal(){
 {/* <Userefone/> */}
 {/* <Main/> */}
 {/* <Main2/> */}
-<Main3/>
+{/* <Main3/> */}
+{/* <Main4/> */}
+<Main5/>
     </>
   )
 }

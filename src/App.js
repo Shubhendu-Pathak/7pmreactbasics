@@ -19,6 +19,9 @@ import Main3 from './VideoSearch/Main3'
 import Main4 from './axios crud jsonServer/Main4'
 import Main5 from './fetchapis/Main5'
 import Main6 from './VideoSearchRevision/Main6'
+import Main7 from './ToDoList/Main7'
+import Memo from './MemoandCall.jsx/Memo'
+import One from './MemoandCall.jsx/One'
 
 class App extends React.Component {
 
@@ -143,7 +146,10 @@ getCartTotal(){
 {/* <Main3/> */}
 {/* <Main4/> */}
 {/* <Main5/> */}
-<Main6/>
+{/* <Main6/> */}
+{/* <Main7/> */}
+{/* <Memo/> */}
+<One/>
     </>
   )
 }

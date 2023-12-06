@@ -1,0 +1,5 @@
+.doneitem{
+    opacity: 0.9;
+    color: gainsboro;
+    text-decoration: line-through;
+}

@@ -1,0 +1,22 @@
+{
+  "mydata": [
+    {
+      "name": "Bus",
+      "age": "45",
+      "pass": "grass",
+      "gender": "Female",
+      "hobby": [
+        "Swimming"
+      ],
+      "country": "Italy2",
+      "comment": "uiojhnb",
+      "id": 1
+    },
+    {
+      "id": 2
+    },
+    {
+      "id": 3
+    }
+  ]
+}

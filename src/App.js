@@ -23,6 +23,8 @@ import Main7 from './ToDoList/Main7'
 import Memo from './MemoandCall.jsx/Memo'
 import One from './MemoandCall.jsx/One'
 import Demofv from './Formvalidator/Demofv'
+import Formikone from './Formvalidator/Formikone'
+import Formiktwo from './Formvalidator/Formiktwo'
 
 class App extends React.Component {
 
@@ -151,7 +153,9 @@ getCartTotal(){
 {/* <Main7/> */}
 {/* <Memo/> */}
 {/* <One/> */}
-<Demofv/>
+{/* <Demofv/> */}
+{/* <Formikone/> */}
+<Formiktwo/>
     </>
   )
 }

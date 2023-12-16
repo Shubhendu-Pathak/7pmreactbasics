@@ -25,6 +25,7 @@ import One from './MemoandCall.jsx/One'
 import Demofv from './Formvalidator/Demofv'
 import Formikone from './Formvalidator/Formikone'
 import Formiktwo from './Formvalidator/Formiktwo'
+import Main8 from './Tanstack-react-table/Main8'
 
 class App extends React.Component {
 
@@ -155,7 +156,8 @@ getCartTotal(){
 {/* <One/> */}
 {/* <Demofv/> */}
 {/* <Formikone/> */}
-<Formiktwo/>
+{/* <Formiktwo/> */}
+<Main8/>
     </>
   )
 }

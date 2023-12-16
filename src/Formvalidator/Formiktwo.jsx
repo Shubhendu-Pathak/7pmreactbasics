@@ -26,9 +26,7 @@ function Formiktwo() {
         onSubmit={(values)=>{
             console.log(values)
             setdata(values)
-//  axios
-// .post('http://localhost:4000/mydata',data)
-// .then(response=>console.log(response))
+ axios.post('http://localhost:4000/mydata',data).then(response=>console.log(response))
         }}
         >
             <Form>
